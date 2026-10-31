@@ -3,3 +3,7 @@ Dieses Repository enthält die Abgabedateien für das Modul Echtzeitsysteme und 
 
 - **Autor:** Ledig, Jonas
 - **Autor:** Kebab, Mohamad Laith
+
+## Demonstrationsvideos
+- **Obstacle avoidance:** https://youtube.com/shorts/JqkiD1h4NuY?feature=share
+- **Wall follower** https://youtu.be/RsvQyWxunuw
