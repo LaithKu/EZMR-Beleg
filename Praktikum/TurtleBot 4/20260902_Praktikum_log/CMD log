@@ -1,0 +1,592 @@
+1.
+leobots@leobotsros:~$ ros2 run teleop_twist_keyboard
+usage: ros2 run [-h] [--prefix PREFIX] package_name executable_name ...
+ros2 run: error: the following arguments are required: executable_name, argv
+leobots@leobotsros:~$ source /opt/ros2/humble/setup.bash
+bash: /opt/ros2/humble/setup.bash: No such file or directory
+leobots@leobotsros:~$ source /opt/ros/humble/setup.bash
+leobots@leobotsros:~$ ros2 run teleop_twist_keyboard
+usage: ros2 run [-h] [--prefix PREFIX] package_name executable_name ...
+ros2 run: error: the following arguments are required: executable_name, argv
+leobots@leobotsros:~$ ros run teleop_twist_keyboard
+Command 'ros' not found, but there are 13 similar ones.
+leobots@leobotsros:~$ ros2 topic list
+/battery_state
+/cmd_vel
+/diagnostics
+/diagnostics_agg
+/diagnostics_toplevel_state
+/dock_status
+/function_calls
+/hazard_detection
+/imu
+/interface_buttons
+/ip
+/joint_states
+/joy
+/joy/set_feedback
+/mouse
+/oakd/rgb/preview/image_raw
+/parameter_events
+/robot_description
+/rosout
+/scan
+/tf
+/tf_static
+/wheel_status
+leobots@leobotsros:~$ ros2 run teleop_twist_keyboard
+usage: ros2 run [-h] [--prefix PREFIX] package_name executable_name ...
+ros2 run: error: the following arguments are required: executable_name, argv
+leobots@leobotsros:~$ ros2 run teleop_twist_keyboard teleop_twist_keyboard
+
+This node takes keypresses from the keyboard and publishes them
+as Twist/TwistStamped messages. It works best with a US keyboard layout.
+---------------------------
+Moving around:
+   u    i    o
+   j    k    l
+   m    ,    .
+
+For Holonomic mode (strafing), hold down the shift key:
+---------------------------
+   U    I    O
+   J    K    L
+   M    <    >
+
+t : up (+z)
+b : down (-z)
+
+anything else : stop
+
+q/z : increase/decrease max speeds by 10%
+w/x : increase/decrease only linear speed by 10%
+e/c : increase/decrease only angular speed by 10%
+
+CTRL-C to quit
+
+currently:	speed 0.5	turn 1.0 
+currently:	speed 0.45	turn 0.9 
+currently:	speed 0.405	turn 0.81 
+currently:	speed 0.36450000000000005	turn 0.7290000000000001 
+currently:	speed 0.32805000000000006	turn 0.6561000000000001 
+currently:	speed 0.2952450000000001	turn 0.5904900000000002 
+currently:	speed 0.2657205000000001	turn 0.5314410000000002 
+currently:	speed 0.23914845000000007	turn 0.47829690000000014 
+currently:	speed 0.21523360500000008	turn 0.43046721000000016 
+currently:	speed 0.19371024450000007	turn 0.38742048900000015 
+currently:	speed 0.17433922005000008	turn 0.34867844010000015 
+currently:	speed 0.15690529804500009	turn 0.31381059609000017 
+currently:	speed 0.14121476824050008	turn 0.28242953648100017 
+currently:	speed 0.12709329141645007	turn 0.25418658283290013 
+currently:	speed 0.11438396227480506	turn 0.22876792454961012 
+currently:	speed 0.10294556604732455	turn 0.2058911320946491 
+
+This node takes keypresses from the keyboard and publishes them
+as Twist/TwistStamped messages. It works best with a US keyboard layout.
+---------------------------
+Moving around:
+   u    i    o
+   j    k    l
+   m    ,    .
+
+For Holonomic mode (strafing), hold down the shift key:
+---------------------------
+   U    I    O
+   J    K    L
+   M    <    >
+
+t : up (+z)
+b : down (-z)
+
+anything else : stop
+
+q/z : increase/decrease max speeds by 10%
+w/x : increase/decrease only linear speed by 10%
+e/c : increase/decrease only angular speed by 10%
+
+CTRL-C to quit
+
+currently:	speed 0.0926510094425921	turn 0.1853020188851842 
+currently:	speed 0.08338590849833288	turn 0.16677181699666577 
+currently:	speed 0.0750473176484996	turn 0.1500946352969992 
+currently:	speed 0.06754258588364964	turn 0.13508517176729928 
+currently:	speed 0.06078832729528468	turn 0.12157665459056936 
+currently:	speed 0.05470949456575622	turn 0.10941898913151243 
+currently:	speed 0.0492385451091806	turn 0.0984770902183612 
+currently:	speed 0.04431469059826254	turn 0.08862938119652508 
+currently:	speed 0.039883221538436285	turn 0.07976644307687257 
+currently:	speed 0.03589489938459266	turn 0.07178979876918531 
+currently:	speed 0.03948438932305193	turn 0.07896877864610385 
+currently:	speed 0.043432828255357124	turn 0.08686565651071425 
+currently:	speed 0.04777611108089284	turn 0.09555222216178567 
+currently:	speed 0.052553722188982126	turn 0.10510744437796425 
+currently:	speed 0.057809094407880346	turn 0.11561818881576069 
+
+This node takes keypresses from the keyboard and publishes them
+as Twist/TwistStamped messages. It works best with a US keyboard layout.
+---------------------------
+Moving around:
+   u    i    o
+   j    k    l
+   m    ,    .
+
+For Holonomic mode (strafing), hold down the shift key:
+---------------------------
+   U    I    O
+   J    K    L
+   M    <    >
+
+t : up (+z)
+b : down (-z)
+
+anything else : stop
+
+q/z : increase/decrease max speeds by 10%
+w/x : increase/decrease only linear speed by 10%
+e/c : increase/decrease only angular speed by 10%
+
+CTRL-C to quit
+
+currently:	speed 0.06359000384866839	turn 0.12718000769733678 
+currently:	speed 0.06994900423353524	turn 0.13989800846707048 
+currently:	speed 0.07694390465688877	turn 0.15388780931377755 
+currently:	speed 0.08463829512257766	turn 0.16927659024515532 
+currently:	speed 0.09310212463483543	turn 0.18620424926967086 
+currently:	speed 0.10241233709831898	turn 0.20482467419663797 
+currently:	speed 0.11265357080815089	turn 0.22530714161630178 
+currently:	speed 0.12391892788896598	turn 0.24783785577793196 
+currently:	speed 0.1363108206778626	turn 0.2726216413557252 
+currently:	speed 0.14994190274564886	turn 0.29988380549129773 
+currently:	speed 0.16493609302021375	turn 0.3298721860404275 
+currently:	speed 0.18142970232223515	turn 0.3628594046444703 
+currently:	speed 0.19957267255445868	turn 0.39914534510891736 
+currently:	speed 0.21952993980990457	turn 0.43905987961980913 
+currently:	speed 0.24148293379089505	turn 0.4829658675817901 
+
+This node takes keypresses from the keyboard and publishes them
+as Twist/TwistStamped messages. It works best with a US keyboard layout.
+---------------------------
+Moving around:
+   u    i    o
+   j    k    l
+   m    ,    .
+
+For Holonomic mode (strafing), hold down the shift key:
+---------------------------
+   U    I    O
+   J    K    L
+   M    <    >
+
+t : up (+z)
+b : down (-z)
+
+anything else : stop
+
+q/z : increase/decrease max speeds by 10%
+w/x : increase/decrease only linear speed by 10%
+e/c : increase/decrease only angular speed by 10%
+
+CTRL-C to quit
+
+currently:	speed 0.2656312271699846	turn 0.5312624543399692 
+currently:	speed 0.2921943498869831	turn 0.5843886997739662 
+currently:	speed 0.32141378487568145	turn 0.6428275697513629 
+currently:	speed 0.3535551633632496	turn 0.7071103267264992 
+currently:	speed 0.31819964702692466	turn 0.6363992940538493 
+currently:	speed 0.2863796823242322	turn 0.5727593646484644 
+currently:	speed 0.257741714091809	turn 0.515483428183618 
+mmmleobots@leobotsros:~$ ros2 topiclist
+usage: ros2 [-h] [--use-python-default-buffering]
+            Call `ros2 <command> -h` for more detailed usage. ...
+ros2: error: argument Call `ros2 <command> -h` for more detailed usage.: invalid choice: 'topiclist' (choose from 'action', 'bag', 'component', 'control', 'daemon', 'doctor', 'extension_points', 'extensions', 'interface', 'launch', 'lifecycle', 'multicast', 'node', 'param', 'pkg', 'run', 'security', 'service', 'test', 'topic', 'wtf')
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2.
+leobots@leobotsros:~$ ros2 topic list
+/battery_state
+/cliff_intensity
+/cmd_audio
+/cmd_lightring
+/cmd_vel
+/diagnostics
+/diagnostics_agg
+/diagnostics_toplevel_state
+/dock_status
+/function_calls
+/hazard_detection
+/imu
+/interface_buttons
+/ip
+/ir_intensity
+/ir_opcode
+/joint_states
+/joy
+/joy/set_feedback
+/kidnap_status
+/mobility_monitor/transition_event
+/mouse
+/oakd/imu/data
+/oakd/rgb/preview/camera_info
+/oakd/rgb/preview/image_raw
+/oakd/rgb/preview/image_raw/compressed
+/oakd/rgb/preview/image_raw/compressedDepth
+/oakd/rgb/preview/image_raw/theora
+/odom
+/parameter_events
+/robot_description
+/robot_state/transition_event
+/rosout
+/scan
+/slip_status
+/static_transform/transition_event
+/stop_status
+/tf
+/tf_static
+/wheel_status
+/wheel_ticks
+/wheel_vels
+leobots@leobotsros:~$ ros2 node list
+/_internal/composite_hazard
+/_internal/kinematics_engine
+/_internal/mobility
+/_internal/stasis
+/analyzers
+/joint_state_publisher
+/joy_linux_node
+/launch_ros_1022
+/mobility_monitor
+/motion_control
+/oakd
+/oakd_container
+/robot_state
+/robot_state_publisher
+/rplidar_composition
+/static_transform
+/system_health
+/teleop_twist_joy_node
+/turtlebot4_diagnostics
+/turtlebot4_node
+/ui_mgr
+leobots@leobotsros:~$ ros2 run rviz2 rviz2
+[INFO] [1788335618.100413227] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1788335618.100503143] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[INFO] [1788335618.161942006] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1788335620.213620223] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335618.708 for reason 'discarding message because the queue is full'
+[INFO] [1788335620.340888267] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335618.843 for reason 'discarding message because the queue is full'
+[INFO] [1788335620.469037237] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335618.978 for reason 'discarding message because the queue is full'
+[INFO] [1788335620.628860026] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335619.113 for reason 'discarding message because the queue is full'
+[INFO] [1788335620.757293605] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335619.249 for reason 'discarding message because the queue is full'
+[INFO] [1788335620.885068928] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335619.383 for reason 'discarding message because the queue is full'
+[INFO] [1788335621.013554086] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335619.518 for reason 'discarding message because the queue is full'
+[INFO] [1788335621.172919216] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335619.654 for reason 'discarding message because the queue is full'
+[INFO] [1788335621.300784921] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335619.789 for reason 'discarding message because the queue is full'
+[INFO] [1788335621.429093333] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335619.924 for reason 'discarding message because the queue is full'
+[INFO] [1788335621.556876930] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335620.059 for reason 'discarding message because the queue is full'
+[INFO] [1788335621.717092820] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335620.194 for reason 'discarding message because the queue is full'
+[INFO] [1788335621.941214444] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335620.329 for reason 'discarding message because the queue is full'
+[INFO] [1788335621.973064441] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335620.465 for reason 'discarding message because the queue is full'
+[INFO] [1788335622.101261465] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335620.599 for reason 'discarding message because the queue is full'
+[INFO] [1788335622.228873822] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335620.735 for reason 'discarding message because the queue is full'
+[INFO] [1788335622.389596686] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335620.870 for reason 'discarding message because the queue is full'
+[INFO] [1788335622.517399116] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335621.005 for reason 'discarding message because the queue is full'
+[INFO] [1788335622.645170864] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335621.140 for reason 'discarding message because the queue is full'
+[INFO] [1788335622.772980001] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335621.277 for reason 'discarding message because the queue is full'
+[INFO] [1788335622.933448799] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335621.410 for reason 'discarding message because the queue is full'
+[INFO] [1788335623.061380176] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335621.545 for reason 'discarding message because the queue is full'
+[INFO] [1788335623.189352708] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335621.681 for reason 'discarding message because the queue is full'
+[INFO] [1788335623.316789170] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335621.816 for reason 'discarding message because the queue is full'
+[INFO] [1788335623.445365854] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335621.951 for reason 'discarding message because the queue is full'
+[WARN] [1788335623.445655331] [rviz]: New publisher discovered on topic '/odom', offering incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[INFO] [1788335623.604905732] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335622.086 for reason 'discarding message because the queue is full'
+[INFO] [1788335623.733562926] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335622.221 for reason 'discarding message because the queue is full'
+[INFO] [1788335623.860691188] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335622.356 for reason 'discarding message because the queue is full'
+[INFO] [1788335623.988786397] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335622.491 for reason 'discarding message because the queue is full'
+[INFO] [1788335624.116586687] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335622.626 for reason 'discarding message because the queue is full'
+[INFO] [1788335624.277358243] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335622.762 for reason 'discarding message because the queue is full'
+[INFO] [1788335624.404930237] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335622.896 for reason 'discarding message because the queue is full'
+[INFO] [1788335624.532971838] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335623.031 for reason 'discarding message because the queue is full'
+[INFO] [1788335624.692921601] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335623.167 for reason 'discarding message because the queue is full'
+[INFO] [1788335624.950453461] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335623.302 for reason 'discarding message because the queue is full'
+[INFO] [1788335625.013266742] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335623.438 for reason 'discarding message because the queue is full'
+[INFO] [1788335625.109353670] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335623.572 for reason 'discarding message because the queue is full'
+[INFO] [1788335625.237200217] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335623.707 for reason 'discarding message because the queue is full'
+[ERROR] [1788335625.247621662] [rviz2]: Lookup would require extrapolation into the future.  Requested time 1788335625.192186 but the latest data is at time 1788335625.129844, when looking up transform from frame [rplidar_link] to frame [odom]
+[INFO] [1788335625.492694733] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335623.842 for reason 'discarding message because the queue is full'
+[INFO] [1788335627.380505879] [rviz]: Message Filter dropping message: frame 'rplidar_link' at time 1788335623.977 for reason 'discarding message because the queue is full'
+[ERROR] [1788335633.461697666] [rviz2]: Lookup would require extrapolation into the future.  Requested time 1788335633.433531 but the latest data is at time 1788335633.386244, when looking up transform from frame [rplidar_link] to frame [odom]
+
+leobots@leobotsros:~$ ros2 topic echo /scan --once
+header:
+  stamp:
+    sec: 1788335932
+    nanosec: 237404650
+  frame_id: rplidar_link
+angle_min: -3.1241390705108643
+angle_max: 3.1415927410125732
+angle_increment: 0.005806980188935995
+time_increment: 0.000123004472698085
+scan_time: 0.13272182643413544
+range_min: 0.15000000596046448
+range_max: 12.0
+ranges:
+- 3.308000087738037
+- 3.312000036239624
+- 3.308000087738037
+- 3.303999900817871
+- 3.299999952316284
+- 3.299999952316284
+- 3.299999952316284
+- 3.2920000553131104
+- 3.2920000553131104
+- 3.2679998874664307
+- 3.2720000743865967
+- 3.2880001068115234
+- 3.2799999713897705
+- 3.2799999713897705
+- 3.2760000228881836
+- 3.2720000743865967
+- 3.2720000743865967
+- 3.2679998874664307
+- 3.2679998874664307
+- 3.2639999389648438
+- 3.259999990463257
+- 3.2639999389648438
+- 3.2639999389648438
+- 3.2639999389648438
+- 3.259999990463257
+- 3.252000093460083
+- 3.247999906539917
+- 3.252000093460083
+- 3.252000093460083
+- 3.247999906539917
+- 3.252000093460083
+- 3.252000093460083
+- 3.247999906539917
+- 3.247999906539917
+- .inf
+- 2.308000087738037
+- 2.308000087738037
+- 2.308000087738037
+- 2.303999900817871
+- 2.2239999771118164
+- 2.2239999771118164
+- 2.2279999256134033
+- 2.240000009536743
+- 2.247999906539917
+- 2.247999906539917
+- 2.247999906539917
+- 2.240000009536743
+- 2.24399995803833
+- 2.2760000228881836
+- 2.312000036239624
+- 3.2720000743865967
+- 3.2720000743865967
+- 3.2720000743865967
+- 3.2720000743865967
+- 3.2799999713897705
+- 3.2799999713897705
+- 3.2839999198913574
+- 3.2839999198913574
+- 3.2880001068115234
+- 3.2920000553131104
+- 3.2920000553131104
+- 3.2920000553131104
+- 3.25600004196167
+- 3.2839999198913574
+- 3.2839999198913574
+- 3.2839999198913574
+- 3.303999900817871
+- 3.308000087738037
+- 3.312000036239624
+- 3.315999984741211
+- 3.3239998817443848
+- 2.4200000762939453
+- 2.4200000762939453
+- 2.4200000762939453
+- 2.4200000762939453
+- 3.3480000495910645
+- 3.3480000495910645
+- 3.3519999980926514
+- 3.359999895095825
+- 3.364000082015991
+- 3.364000082015991
+- 3.364000082015991
+- 3.375999927520752
+- 3.384000062942505
+- 3.3919999599456787
+- 3.4000000953674316
+- 3.4079999923706055
+- 3.4159998893737793
+- 3.427999973297119
+- 3.431999921798706
+- 3.436000108718872
+- 3.444000005722046
+- 3.4519999027252197
+- 3.4600000381469727
+- 3.4639999866485596
+- 3.4719998836517334
+- 3.4800000190734863
+- 3.4839999675750732
+- 3.492000102996826
+- 3.5
+- 3.503999948501587
+- 3.51200008392334
+- 3.5199999809265137
+- 3.5280001163482666
+- 3.5399999618530273
+- 3.555999994277954
+- 3.563999891281128
+- 3.568000078201294
+- 3.5840001106262207
+- 3.6040000915527344
+- 3.6080000400543213
+- 3.619999885559082
+- 3.631999969482422
+- 3.631999969482422
+- 3.640000104904175
+- 3.6480000019073486
+- 3.6559998989105225
+- 3.6600000858306885
+- 3.628000020980835
+- 3.5999999046325684
+- 3.6440000534057617
+- 3.7039999961853027
+- 3.7239999771118164
+- 3.7320001125335693
+- 3.747999906539917
+- 3.7679998874664307
+- 3.7839999198913574
+- 3.799999952316284
+- '...'
+intensities:
+- 0.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 0.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 0.0
+- 0.0
+- 0.0
+- 47.0
+- 47.0
+- 47.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 0.0
+- 0.0
+- 0.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- 47.0
+- '...'
+---
+
+
