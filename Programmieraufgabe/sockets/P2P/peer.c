@@ -1,6 +1,5 @@
 #define _POSIX_C_SOURCE 200809L
-/* Praktikum Sockets d: gleichberechtigte Peers unter Linux.
- * Bauen: gcc -std=c11 -Wall -Wextra -Wpedantic -g -pthread peer.c -o peer
+/* Bauen: gcc -std=c11 -Wall -Wextra -Wpedantic -g -pthread peer.c -o peer
  * Start: ./peer 5001
  * Eingabe: 127.0.0.1 5002 ADD Hallo von Peer A
  * Ende: QUIT (oder EOF). Jede Instanz besitzt ihre eigene fluechtige Liste.
