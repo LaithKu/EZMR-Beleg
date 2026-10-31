@@ -8,7 +8,6 @@
 
 #define MAX_PDU 128
 
-/* Wie beim Server: Auch Teiluebertragungen beruecksichtigen. */
 static int send_all(int fd, const char *text)
 {
     size_t length = strlen(text);
